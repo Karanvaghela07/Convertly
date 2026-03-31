@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>How-To Guides: PDF Conversion Tutorials | Convertlyyy - Step-by-Step Instructions</title>
+  <meta name="description" content="Learn how to convert PDF to Word, merge PDFs, compress files, and more with our step-by-step guides. Free tutorials for beginners on using PDF and file conversion tools effectively.">
+  <meta name="keywords" content="PDF conversion tutorial, how to convert PDF, PDF to Word guide, merge PDF tutorial, compress PDF guide, file conversion help, document management tips">
+  <meta name="author" content="Convertlyyy">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://convertlyyy.netlify.app/guides.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://convertlyyy.netlify.app/guides.html">
+  <meta property="og:title" content="How-To Guides - PDF Conversion Tutorials | Convertlyyy">
+  <meta property="og:description" content="Step-by-step tutorials on PDF conversion, file management, and document tools. Learn how to convert, merge, and compress files like a pro.">
+  <meta property="og:image" content="https://convertlyyy.netlify.app/og-image.png">
+  <meta property="og:site_name" content="Convertlyyy">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How-To Guides - PDF Conversion Tutorials">
+  <meta name="twitter:description" content="Free step-by-step guides for PDF conversion and file management.">
+  <meta name="twitter:image" content="https://convertlyyy.netlify.app/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5608327928856744" crossorigin="anonymous"></script>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "PDF Conversion How-To Guides",
+    "description": "Step-by-step tutorials and guides for PDF and file conversion",
+    "url": "https://convertlyyy.netlify.app/guides.html",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "How to Convert PDF to Word", "url": "#pdf-to-word"},
+        {"@type": "ListItem", "position": 2, "name": "How to Merge Multiple PDFs", "url": "#merge-pdf"},
+        {"@type": "ListItem", "position": 3, "name": "How to Compress PDF Files", "url": "#compress-pdf"},
+        {"@type": "ListItem", "position": 4, "name": "How to Convert Excel to PDF", "url": "#excel-to-pdf"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertlyyy.netlify.app/"},
+      {"@type": "ListItem", "position": 2, "name": "How-To Guides", "item": "https://convertlyyy.netlify.app/guides.html"}
+    ]
+  }
+  </script>
+  
+  <style>
+    .guides-container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    .guides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 48px; }
+    .guide-card { background: #fff; border: 1px solid var(--border-light); border-radius: 16px; overflow: hidden; transition: all 0.3s; }
+    .guide-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); border-color: var(--primary-red); }
+    .guide-card-header { background: linear-gradient(135deg, #E5322D 0%, #c0392b 100%); padding: 24px; }
+    .guide-card-header h3 { color: white; font-size: 1.25rem; margin: 0; }
+    .guide-card-body { padding: 24px; }
+    .guide-card-body p { color: var(--text-gray); margin-bottom: 16px; line-height: 1.7; }
+    .guide-card-body .btn { display: inline-block; background: var(--primary-red); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; }
+    .guide-card-body .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(229,50,45,0.3); }
+    
+    .detailed-guide { background: #fff; border-radius: 16px; padding: 40px; margin-bottom: 48px; border: 1px solid var(--border-light); }
+    .detailed-guide h2 { color: var(--primary-red); font-size: 1.75rem; margin-bottom: 20px; }
+    .detailed-guide h3 { font-size: 1.25rem; margin: 28px 0 16px; color: var(--text-dark); }
+    .detailed-guide p { line-height: 1.8; margin-bottom: 16px; color: var(--text-gray); }
+    .detailed-guide ul, .detailed-guide ol { margin: 16px 0; padding-left: 24px; }
+    .detailed-guide li { margin-bottom: 12px; line-height: 1.7; color: var(--text-gray); }
+    
+    .step-box { background: #f8f9fa; border-left: 4px solid var(--primary-red); padding: 20px 24px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .step-box h4 { color: var(--primary-red); margin: 0 0 8px; font-size: 1rem; }
+    .step-box p { margin: 0; color: var(--text-dark); }
+    
+    .tip-box { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .tip-box::before { content: "💡 Pro Tip: "; font-weight: 700; color: #2e7d32; }
+    
+    .warning-box { background: #fff3e0; border-left: 4px solid #ff9800; padding: 16px 20px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .warning-box::before { content: "⚠️ Note: "; font-weight: 700; color: #e65100; }
+    
+    .cta-section { background: linear-gradient(135deg, #E5322D 0%, #c0392b 100%); padding: 48px; border-radius: 16px; text-align: center; margin: 48px 0; }
+    .cta-section h2 { color: white; margin-bottom: 16px; }
+    .cta-section p { color: rgba(255,255,255,0.9); margin-bottom: 24px; }
+    .cta-section .btn { display: inline-block; background: white; color: var(--primary-red); padding: 16px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: all 0.2s; }
+    .cta-section .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    
+    .toc { background: #f8f9fa; padding: 24px 28px; border-radius: 12px; margin-bottom: 40px; }
+    .toc h3 { margin: 0 0 16px; font-size: 1.1rem; }
+    .toc ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px; }
+    .toc li a { color: var(--primary-red); text-decoration: none; font-weight: 500; }
+    .toc li a:hover { text-decoration: underline; }
+    
+    @media (max-width: 768px) {
+      .guides-container { padding: 20px 16px; }
+      .detailed-guide { padding: 24px; }
+      .detailed-guide h2 { font-size: 1.5rem; }
+      .step-box, .tip-box, .warning-box { padding: 16px; }
+      .cta-section { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-wrap" style="display:flex; align-items:center; gap:10px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 2C3.44772 2 3 2.44772 3 3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V7.82843C21 7.56321 20.8946 7.30886 20.7071 7.12132L15.8787 2.29289C15.6911 2.10536 15.4368 2 15.1716 2H4Z" fill="#E5322D"/>
+            <path d="M15 2V6C15 7.10457 15.8954 8 17 8H21L15 2Z" fill="#B3201B"/>
+            <rect x="7" y="13" width="10" height="2.5" rx="1" fill="white"/>
+            <rect x="7" y="17" width="10" height="2.5" rx="1" fill="white"/>
+          </svg>
+          <span style="font-size:1.8rem; font-weight:800; color:#2d2d2d; letter-spacing:-0.5px; font-family:'Inter', sans-serif;">Convertlyyy</span>
+        </div>
+      </a>
+            <div class="nav-links">
+        <div class="dropdown">
+          <a href="#" class="nav-link">Convert PDF ▾</a>
+          <div class="dropdown-menu">
+            <a href="/pdf-to-word.html">PDF to Word</a>
+            <a href="/word-to-pdf.html">Word to PDF</a>
+            <a href="/pdf-to-jpg.html">PDF to JPG</a>
+            <a href="/jpg-to-pdf.html">JPG to PDF</a>
+            <a href="/pdf-to-excel.html">PDF to Excel</a>
+            <a href="/excel-to-pdf.html">Excel to PDF</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Excel Tools ▾</a>
+          <div class="dropdown-menu">
+            <a href="/excel-to-pdf.html">Excel to PDF</a>
+            <a href="/pdf-to-excel.html">PDF to Excel</a>
+            <a href="/csv-to-excel.html">CSV to Excel</a>
+            <a href="/excel-to-csv.html">Excel to CSV</a>
+            <a href="/json-to-csv.html">JSON to CSV <span style="font-size:0.6rem; background:#E5322D; color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">NEW</span></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Organize PDF ▾</a>
+          <div class="dropdown-menu">
+            <a href="/merge-pdf.html">Merge PDF</a>
+            <a href="/split-pdf.html">Split PDF</a>
+            <a href="/compress-pdf.html">Compress PDF</a>
+            <a href="/protect-pdf.html">Protect PDF <span style="font-size:0.6rem; background:#E5322D; color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">NEW</span></a>
+            <a href="/add-watermark.html">Add Watermark <span style="font-size:0.6rem; background:linear-gradient(90deg, #f59e0b, #ec4899); color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">PRO</span></a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Resources ▾</a>
+          <div class="dropdown-menu">
+            <a href="/guides.html">How-To Guides</a>
+            <a href="/articles.html">Articles & Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About Us</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="/signin.html" class="btn-login">Log in</a>
+        <a href="/signup.html" class="btn-signup">Sign up</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="legal-hero" style="background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);">
+    <div class="section-container">
+      <h1>How-To Guides</h1>
+      <p>Step-by-step tutorials to help you master PDF conversion and file management. Whether you're a beginner or looking to learn advanced techniques, these guides will help you get the most out of Convertlyyy.</p>
+    </div>
+  </header>
+
+  <main class="guides-container">
+    
+    <!-- Quick Access Guide Cards -->
+    <h2 style="margin-bottom: 24px;">Quick Start Guides</h2>
+    <div class="guides-grid">
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <h3>📄 PDF to Word Conversion</h3>
+        </div>
+        <div class="guide-card-body">
+          <p>Learn how to convert PDF documents to editable Word files while preserving formatting, images, and layout.</p>
+          <a href="#pdf-to-word" class="btn">Read Guide</a>
+        </div>
+      </div>
+      
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <h3>🔗 Merging PDF Files</h3>
+        </div>
+        <div class="guide-card-body">
+          <p>Combine multiple PDF documents into a single file. Perfect for reports, portfolios, and document organization.</p>
+          <a href="#merge-pdf" class="btn">Read Guide</a>
+        </div>
+      </div>
+      
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <h3>📦 Compressing PDFs</h3>
+        </div>
+        <div class="guide-card-body">
+          <p>Reduce PDF file sizes for easier sharing via email and faster uploading to websites and cloud storage.</p>
+          <a href="#compress-pdf" class="btn">Read Guide</a>
+        </div>
+      </div>
+      
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <h3>📊 Excel to PDF</h3>
+        </div>
+        <div class="guide-card-body">
+          <p>Convert Excel spreadsheets to professional PDF documents that look great on any device.</p>
+          <a href="#excel-to-pdf" class="btn">Read Guide</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h3>All Guides on This Page</h3>
+      <ul>
+        <li><a href="#pdf-to-word">How to Convert PDF to Word</a></li>
+        <li><a href="#merge-pdf">How to Merge Multiple PDFs</a></li>
+        <li><a href="#compress-pdf">How to Compress PDF Files</a></li>
+        <li><a href="#excel-to-pdf">How to Convert Excel to PDF</a></li>
+        <li><a href="#jpg-to-pdf">How to Convert Images to PDF</a></li>
+        <li><a href="#split-pdf">How to Split PDF into Pages</a></li>
+        <li><a href="#best-practices">Best Practices for File Conversion</a></li>
+      </ul>
+    </div>
+    
+    <!-- Detailed Guide 1: PDF to Word -->
+    <div class="detailed-guide" id="pdf-to-word">
+      <h2>How to Convert PDF to Word (Complete Guide)</h2>
+      
+      <p>Converting PDF files to editable Word documents is one of the most common document management tasks. Whether you need to edit a contract, update a report, or repurpose content from a PDF, our PDF to Word converter makes the process quick and simple. This comprehensive guide will walk you through everything you need to know about converting PDFs to Word format.</p>
+      
+      <h3>Why Convert PDF to Word?</h3>
+      <p>PDF files are excellent for preserving document formatting and ensuring consistent viewing across devices. However, they're not designed for editing. When you need to modify the content of a PDF—whether that's updating text, adding information, or reformatting sections—converting to Word gives you full editing capabilities.</p>
+      
+      <p>Common reasons to convert PDF to Word include:</p>
+      <ul>
+        <li>Editing text content that was originally created as a PDF</li>
+        <li>Repurposing content from PDF reports or documents</li>
+        <li>Updating contracts, forms, or templates</li>
+        <li>Extracting content for use in other documents</li>
+        <li>Making PDF content accessible for collaboration</li>
+      </ul>
+      
+      <h3>Step-by-Step Instructions</h3>
+      
+      <div class="step-box">
+        <h4>Step 1: Navigate to the PDF to Word Tool</h4>
+        <p>Open your web browser and go to <a href="/pdf-to-word.html">convertlyyy.netlify.app/pdf-to-word</a>. No account or login is required.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 2: Upload Your PDF File</h4>
+        <p>Click the "Choose File" button or drag and drop your PDF file directly onto the upload area. You can upload files up to 50MB in size.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 3: Wait for Processing</h4>
+        <p>Once uploaded, you'll see a progress indicator. The conversion typically takes just a few seconds, depending on the file size and complexity.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 4: Download Your Word Document</h4>
+        <p>When the conversion is complete, click the "Download" button to save your new Word document (.docx) to your computer.</p>
+      </div>
+      
+      <div class="tip-box">
+        For best results, use PDFs that contain actual text rather than scanned images. Scanned documents may require OCR (Optical Character Recognition) software for text extraction.
+      </div>
+      
+      <h3>What Gets Preserved During Conversion?</h3>
+      <p>Our converter does an excellent job of maintaining the original document's appearance. Here's what typically gets preserved:</p>
+      <ul>
+        <li><strong>Text content:</strong> All readable text is extracted and formatted</li>
+        <li><strong>Images:</strong> Embedded images are preserved in their original positions</li>
+        <li><strong>Tables:</strong> Table structures are recreated as Word tables</li>
+        <li><strong>Basic formatting:</strong> Bold, italic, underline, and font sizes</li>
+        <li><strong>Paragraphs:</strong> Paragraph breaks and spacing</li>
+      </ul>
+      
+      <div class="warning-box">
+        Complex layouts, custom fonts, and advanced formatting may require minor adjustments after conversion. Always review your converted document before final use.
+      </div>
+      
+      <h3>Troubleshooting Common Issues</h3>
+      <p>If your conversion doesn't look quite right, try these solutions:</p>
+      <ul>
+        <li><strong>Formatting looks wrong:</strong> The PDF may use complex layouts. Try adjusting the Word document manually.</li>
+        <li><strong>Text appears as images:</strong> The PDF may be scanned. You'll need OCR software to extract the text.</li>
+        <li><strong>Fonts look different:</strong> If your computer doesn't have the exact fonts, Word substitutes similar ones.</li>
+        <li><strong>Conversion fails:</strong> Ensure the PDF isn't password-protected and is under 50MB.</li>
+      </ul>
+      
+      <p style="margin-top: 32px;"><a href="/pdf-to-word.html" style="display: inline-block; background: var(--primary-red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700;">Convert PDF to Word Now →</a></p>
+    </div>
+    
+    <!-- Detailed Guide 2: Merge PDF -->
+    <div class="detailed-guide" id="merge-pdf">
+      <h2>How to Merge Multiple PDFs into One Document</h2>
+      
+      <p>Combining multiple PDF files into a single document is essential for creating comprehensive reports, portfolios, or organized document collections. Instead of sending multiple attachments or managing numerous files, you can merge them into one cohesive PDF. This guide explains everything you need to know about merging PDF files efficiently.</p>
+      
+      <h3>When to Merge PDFs</h3>
+      <p>There are many situations where merging PDFs saves time and improves organization:</p>
+      <ul>
+        <li>Combining chapters of a book or report into one file</li>
+        <li>Creating a portfolio from multiple project documents</li>
+        <li>Assembling meeting materials into a single handout</li>
+        <li>Merging scanned documents that were scanned separately</li>
+        <li>Combining invoices, receipts, or forms for record-keeping</li>
+      </ul>
+      
+      <h3>Step-by-Step Instructions</h3>
+      
+      <div class="step-box">
+        <h4>Step 1: Open the Merge PDF Tool</h4>
+        <p>Go to <a href="/merge-pdf.html">convertlyyy.netlify.app/merge-pdf</a> in your web browser.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 2: Upload Your PDF Files</h4>
+        <p>Click "Choose Files" and select all the PDF files you want to merge. You can also drag and drop multiple files at once.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 3: Arrange the Order</h4>
+        <p>Your files will appear in the order you uploaded them. Drag and drop to rearrange them in your preferred sequence—this will be the order they appear in the final merged document.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 4: Merge and Download</h4>
+        <p>Click the "Merge" button. Once processing is complete, download your combined PDF file.</p>
+      </div>
+      
+      <div class="tip-box">
+        Name your files with numbers (01_intro.pdf, 02_chapter1.pdf, etc.) before uploading to make organizing easier.
+      </div>
+      
+      <h3>Best Practices for Merging PDFs</h3>
+      <ul>
+        <li><strong>Check page orientation:</strong> Ensure all PDFs have consistent page orientation before merging</li>
+        <li><strong>Verify file order:</strong> Double-check the arrangement before merging, as reordering after merge requires starting over</li>
+        <li><strong>Mind the file size:</strong> The total size of all files should be under 50MB</li>
+        <li><strong>Remove unnecessary pages:</strong> Use the Split tool first to extract only needed pages from large documents</li>
+      </ul>
+      
+      <p style="margin-top: 32px;"><a href="/merge-pdf.html" style="display: inline-block; background: var(--primary-red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700;">Merge PDFs Now →</a></p>
+    </div>
+    
+    <!-- Detailed Guide 3: Compress PDF -->
+    <div class="detailed-guide" id="compress-pdf">
+      <h2>How to Compress PDF Files for Smaller File Sizes</h2>
+      
+      <p>Large PDF files can be problematic—they're slow to upload, difficult to email, and take up valuable storage space. PDF compression reduces file sizes while maintaining acceptable quality for most uses. Learn how to effectively compress your PDFs with this comprehensive guide.</p>
+      
+      <h3>Why Compress PDFs?</h3>
+      <p>Compressing PDFs offers several practical benefits:</p>
+      <ul>
+        <li><strong>Email compatibility:</strong> Most email services limit attachments to 25MB or less</li>
+        <li><strong>Faster uploads:</strong> Smaller files upload to cloud storage and websites much faster</li>
+        <li><strong>Reduced storage:</strong> Save space on your computer, phone, or cloud storage</li>
+        <li><strong>Quicker downloads:</strong> Recipients can download your files faster</li>
+        <li><strong>Website optimization:</strong> Compressed PDFs load faster on websites</li>
+      </ul>
+      
+      <h3>Step-by-Step Compression Guide</h3>
+      
+      <div class="step-box">
+        <h4>Step 1: Upload Your PDF</h4>
+        <p>Visit <a href="/compress-pdf.html">convertlyyy.netlify.app/compress-pdf</a> and upload the PDF you want to compress.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 2: Start Compression</h4>
+        <p>Click the "Compress" button. Our tool automatically analyzes your PDF and applies optimal compression settings.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 3: Download the Compressed File</h4>
+        <p>Once complete, you'll see the new file size. Download your compressed PDF, which will typically be 40-80% smaller.</p>
+      </div>
+      
+      <h3>Understanding Compression Results</h3>
+      <p>The amount of compression achieved depends on your PDF's content:</p>
+      <ul>
+        <li><strong>PDFs with many images:</strong> Can be reduced by 60-80%</li>
+        <li><strong>PDFs with high-resolution photos:</strong> Often see the largest reductions</li>
+        <li><strong>Text-heavy PDFs:</strong> May only reduce by 20-40%</li>
+        <li><strong>Already optimized PDFs:</strong> May see minimal reduction</li>
+      </ul>
+      
+      <div class="tip-box">
+        If you need a specific file size (e.g., under 10MB), you may need to compress multiple times or remove unnecessary pages first.
+      </div>
+      
+      <p style="margin-top: 32px;"><a href="/compress-pdf.html" style="display: inline-block; background: var(--primary-red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700;">Compress PDF Now →</a></p>
+    </div>
+    
+    <!-- Detailed Guide 4: Excel to PDF -->
+    <div class="detailed-guide" id="excel-to-pdf">
+      <h2>How to Convert Excel Spreadsheets to PDF</h2>
+      
+      <p>Converting Excel files to PDF format is essential when you need to share spreadsheets while preserving their appearance across different devices and software. PDF format ensures that your carefully formatted data, charts, and tables look exactly as intended, regardless of whether the recipient has Excel installed.</p>
+      
+      <h3>Benefits of Converting Excel to PDF</h3>
+      <ul>
+        <li><strong>Universal compatibility:</strong> PDFs can be opened on any device without Excel</li>
+        <li><strong>Preserved formatting:</strong> Cell borders, colors, and fonts remain intact</li>
+        <li><strong>Print-ready:</strong> PDFs print exactly as they appear on screen</li>
+        <li><strong>Security:</strong> Recipients can't accidentally modify your data</li>
+        <li><strong>Professional appearance:</strong> PDFs look polished for business communications</li>
+      </ul>
+      
+      <h3>Step-by-Step Conversion</h3>
+      
+      <div class="step-box">
+        <h4>Step 1: Upload Your Excel File</h4>
+        <p>Go to <a href="/excel-to-pdf.html">convertlyyy.netlify.app/excel-to-pdf</a> and upload your .xlsx or .xls file.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 2: Convert</h4>
+        <p>Click the Convert button. Our system processes your spreadsheet and creates a well-formatted PDF.</p>
+      </div>
+      
+      <div class="step-box">
+        <h4>Step 3: Download</h4>
+        <p>Download your PDF, ready to share via email or upload to any platform.</p>
+      </div>
+      
+      <div class="tip-box">
+        Before converting, adjust your Excel print settings (Page Layout tab) to ensure all data fits properly on the page.
+      </div>
+      
+      <p style="margin-top: 32px;"><a href="/excel-to-pdf.html" style="display: inline-block; background: var(--primary-red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700;">Convert Excel to PDF Now →</a></p>
+    </div>
+    
+    <!-- Guide 5: JPG to PDF -->
+    <div class="detailed-guide" id="jpg-to-pdf">
+      <h2>How to Convert Images to PDF Documents</h2>
+      
+      <p>Converting images to PDF is useful for creating photo albums, portfolios, document scans, and presentations that can be easily shared and viewed on any device. Our JPG to PDF tool supports multiple image formats and lets you combine several images into a single PDF document.</p>
+      
+      <h3>Supported Image Formats</h3>
+      <p>You can convert the following image types to PDF:</p>
+      <ul>
+        <li><strong>JPG/JPEG:</strong> Most common photo format</li>
+        <li><strong>PNG:</strong> Great for screenshots and graphics</li>
+        <li><strong>WEBP:</strong> Modern web image format</li>
+        <li><strong>BMP:</strong> Windows bitmap images</li>
+        <li><strong>GIF:</strong> Graphics and simple images (static)</li>
+      </ul>
+      
+      <h3>Quick Steps</h3>
+      <ol>
+        <li>Go to <a href="/jpg-to-pdf.html">convertlyyy.netlify.app/jpg-to-pdf</a></li>
+        <li>Upload one or more images</li>
+        <li>Arrange them in your preferred order</li>
+        <li>Click Convert to create your PDF</li>
+        <li>Download the resulting PDF document</li>
+      </ol>
+      
+      <p>Each image becomes a separate page in the PDF, making this perfect for creating multi-page documents from individual scans or photos.</p>
+      
+      <p style="margin-top: 32px;"><a href="/jpg-to-pdf.html" style="display: inline-block; background: var(--primary-red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700;">Convert Images to PDF Now →</a></p>
+    </div>
+    
+    <!-- Guide 6: Split PDF -->
+    <div class="detailed-guide" id="split-pdf">
+      <h2>How to Split PDF into Separate Pages</h2>
+      
+      <p>Sometimes you only need specific pages from a large PDF document. Our Split PDF tool allows you to extract individual pages or page ranges, creating a new PDF with just the content you need.</p>
+      
+      <h3>Common Use Cases</h3>
+      <ul>
+        <li>Extracting a single chapter from a textbook</li>
+        <li>Separating pages for different recipients</li>
+        <li>Removing unnecessary pages before sharing</li>
+        <li>Creating handouts from specific sections of a presentation</li>
+      </ul>
+      
+      <h3>How to Use Page Ranges</h3>
+      <p>When specifying which pages to extract, you can use various formats:</p>
+      <ul>
+        <li><strong>Single pages:</strong> "1,3,5" extracts pages 1, 3, and 5</li>
+        <li><strong>Page ranges:</strong> "1-5" extracts pages 1 through 5</li>
+        <li><strong>Combinations:</strong> "1-3,7,10-15" extracts pages 1-3, 7, and 10-15</li>
+      </ul>
+      
+      <p style="margin-top: 32px;"><a href="/split-pdf.html" style="display: inline-block; background: var(--primary-red); color: white; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700;">Split PDF Now →</a></p>
+    </div>
+    
+    <!-- Best Practices Section -->
+    <div class="detailed-guide" id="best-practices">
+      <h2>Best Practices for File Conversion</h2>
+      
+      <p>Follow these tips to get the best results from your file conversions and avoid common pitfalls:</p>
+      
+      <h3>Before Converting</h3>
+      <ul>
+        <li><strong>Check file size:</strong> Ensure your file is under 50MB for optimal processing</li>
+        <li><strong>Remove passwords:</strong> Encrypted files cannot be converted</li>
+        <li><strong>Use original files:</strong> Work with the highest quality source available</li>
+        <li><strong>Close files:</strong> Make sure the file isn't open in another application</li>
+      </ul>
+      
+      <h3>During Conversion</h3>
+      <ul>
+        <li><strong>Stable connection:</strong> Ensure you have a reliable internet connection</li>
+        <li><strong>Be patient:</strong> Large or complex files may take a few moments</li>
+        <li><strong>Don't refresh:</strong> Avoid refreshing the page during processing</li>
+      </ul>
+      
+      <h3>After Converting</h3>
+      <ul>
+        <li><strong>Review results:</strong> Always check the converted file for accuracy</li>
+        <li><strong>Download promptly:</strong> Files are deleted after 2 hours for your privacy</li>
+        <li><strong>Keep originals:</strong> Maintain your original files as backups</li>
+      </ul>
+      
+      <h3>Quality Tips</h3>
+      <ul>
+        <li>For best PDF to Word results, use PDFs created from digital documents rather than scans</li>
+        <li>When merging PDFs, ensure all source files have the same page orientation</li>
+        <li>For image to PDF conversion, use high-resolution images for print-quality results</li>
+        <li>Compress PDFs after merging to reduce the combined file size</li>
+      </ul>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="cta-section">
+      <h2>Ready to Get Started?</h2>
+      <p>Try our free PDF tools now. No signup required—just upload and convert!</p>
+      <a href="/#tools" class="btn">Browse All Tools</a>
+    </div>
+    
+    <!-- Related Resources -->
+    <section style="margin-top: 48px;">
+      <h2>More Resources</h2>
+      <p>Continue learning with our other resources:</p>
+      <ul>
+        <li><a href="/faq.html" style="color: var(--primary-red); font-weight: 600;">Frequently Asked Questions</a> - Quick answers to common questions</li>
+        <li><a href="/articles.html" style="color: var(--primary-red); font-weight: 600;">Articles & Blog</a> - In-depth articles on document management</li>
+        <li><a href="/contact.html" style="color: var(--primary-red); font-weight: 600;">Contact Support</a> - Get help from our team</li>
+      </ul>
+    </section>
+    
+  </main>
+
+  <footer class="footer" style="background:#fff; border-top:1px solid var(--border-light); padding:60px 0; margin-top:60px;">
+    <div class="section-container">
+      <div class="footer-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:40px; margin-bottom:40px;">
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">PDF Tools</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/pdf-to-word.html" style="color:var(--text-gray);">PDF to Word</a>
+            <a href="/word-to-pdf.html" style="color:var(--text-gray);">Word to PDF</a>
+            <a href="/merge-pdf.html" style="color:var(--text-gray);">Merge PDF</a>
+            <a href="/compress-pdf.html" style="color:var(--text-gray);">Compress PDF</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">Excel Tools</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/excel-to-pdf.html" style="color:var(--text-gray);">Excel to PDF</a>
+            <a href="/pdf-to-excel.html" style="color:var(--text-gray);">PDF to Excel</a>
+            <a href="/csv-to-excel.html" style="color:var(--text-gray);">CSV to Excel</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">Resources</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/guides.html" style="color:var(--text-gray);">How-To Guides</a>
+            <a href="/articles.html" style="color:var(--text-gray);">Articles</a>
+            <a href="/faq.html" style="color:var(--text-gray);">FAQ</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">Company</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/about.html" style="color:var(--text-gray);">About Us</a>
+            <a href="/contact.html" style="color:var(--text-gray);">Contact</a>
+            <a href="/privacy.html" style="color:var(--text-gray);">Privacy Policy</a>
+            <a href="/terms.html" style="color:var(--text-gray);">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="text-align:center; padding-top:24px; border-top:1px solid var(--border-light);">
+        <p>&copy; 2026 Convertlyyy. Free PDF & file conversion tools for everyone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>

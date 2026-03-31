@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up | Convertly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      display: flex;
+      min-height: 100vh;
+    }
+    
+    .auth-layout {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    /* Left Panel - Auth Form */
+    .auth-form-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      background: #ffffff;
+      position: relative;
+      z-index: 1;
+    }
+
+    .auth-form-container {
+      width: 100%;
+      max-width: 420px;
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .auth-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      margin-bottom: 3rem;
+    }
+
+    .auth-logo span {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+
+    .auth-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+
+    .auth-subtitle {
+      color: #64748b;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: #0f172a;
+      transition: all 0.2s ease;
+      box-sizing: border-box;
+      background: #f8fafc;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #ef4444;
+      background: #ffffff;
+      box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+    }
+
+    .form-input::placeholder {
+      color: #94a3b8;
+    }
+
+    .auth-submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: #ef4444;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2), 0 2px 4px -2px rgba(239, 68, 68, 0.1);
+    }
+
+    .auth-submit-btn:hover {
+      background: #dc2626;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 8px -1px rgba(239, 68, 68, 0.3), 0 4px 6px -2px rgba(239, 68, 68, 0.2);
+    }
+
+    .auth-submit-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px -1px rgba(239, 68, 68, 0.2);
+    }
+
+    .auth-footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #64748b;
+    }
+
+    .auth-footer a {
+      color: #ef4444;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .auth-footer a:hover {
+      color: #b91c1c;
+      text-decoration: underline;
+    }
+
+    /* Right Panel - Showcase */
+    .auth-showcase-panel {
+      flex: 1.2;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      position: relative;
+      overflow: hidden;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem;
+      color: white;
+    }
+
+    @media (min-width: 992px) {
+      .auth-showcase-panel {
+        display: flex;
+      }
+    }
+
+    .showcase-content {
+      position: relative;
+      z-index: 2;
+      max-width: 500px;
+    }
+
+    .showcase-badge {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #f8fafc;
+    }
+
+    .showcase-title {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(to right, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .showcase-desc {
+      font-size: 1.125rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+
+    /* Decorative Background Elements */
+    .blob {
+      position: absolute;
+      filter: blur(80px);
+      z-index: 1;
+      opacity: 0.6;
+      animation: float 10s infinite ease-in-out alternate;
+    }
+
+    .blob-1 {
+      top: -10%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(239, 68, 68, 0.3);
+      border-radius: 50%;
+    }
+
+    .blob-2 {
+      bottom: -10%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: rgba(59, 130, 246, 0.2);
+      border-radius: 50%;
+      animation-delay: -5s;
+    }
+    
+    .blob-3 {
+      top: 40%;
+      left: 40%;
+      width: 400px;
+      height: 400px;
+      background: rgba(168, 85, 247, 0.2);
+      border-radius: 50%;
+      animation-delay: -2s;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(30px, 30px) scale(1.1); }
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 3rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+
+    .feature-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(239, 68, 68, 0.15);
+      color: #fca5a5;
+    }
+
+    .privacy-notice {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 1.5rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+    
+    .privacy-notice a {
+      color: #64748b;
+      text-decoration: underline;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5608327928856744" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="auth-layout">
+    <!-- Left Panel -->
+    <div class="auth-form-panel">
+      <div class="auth-form-container">
+        
+        <a href="/" class="auth-logo">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 2C3.44772 2 3 2.44772 3 3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V7.82843C21 7.56321 20.8946 7.30886 20.7071 7.12132L15.8787 2.29289C15.6911 2.10536 15.4368 2 15.1716 2H4Z" fill="#ef4444"/>
+            <path d="M15 2V6C15 7.10457 15.8954 8 17 8H21L15 2Z" fill="#b91c1c"/>
+            <rect x="7" y="13" width="10" height="2.5" rx="1" fill="white"/>
+            <rect x="7" y="17" width="10" height="2.5" rx="1" fill="white"/>
+          </svg>
+          <span>Convertly</span>
+        </a>
+
+        <h1 class="auth-title">Create an account</h1>
+        <p class="auth-subtitle">Join Convertly supercharge your conversions.</p>
+
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" class="form-input" placeholder="e.g. John Doe" required autofocus>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" class="form-input" placeholder="name@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-input" placeholder="Create a strong password" required>
+          </div>
+          
+          <button type="submit" class="auth-submit-btn">Create Account</button>
+        </form>
+
+        <p class="privacy-notice">
+          By creating an account, you agree to our <a href="/terms.html">Terms</a> and <a href="/privacy.html">Privacy Policy</a>.
+        </p>
+
+        <div class="auth-footer">
+          Already have an account? <a href="/signin.html">Log in here</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="auth-showcase-panel">
+      <!-- Decorative Background Orbs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="showcase-content">
+        <div class="showcase-badge">Join 50k+ Users</div>
+        <h2 class="showcase-title">Fast & Secure Conversions.</h2>
+        <p class="showcase-desc">Process your documents instantly. Create an account to save your preferences, view your conversion history, and unlock premium tools.</p>
+        
+        <div class="glass-card">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+            </div>
+            <span>Unlimited Document Conversions</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <span>Bank-Level Security & Privacy</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <span>Lightning Fast Processing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>

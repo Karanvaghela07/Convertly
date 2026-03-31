@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Settings | Convertly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      background: var(--bg-main);
+      min-height: 100vh;
+    }
+
+    .settings-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .settings-header {
+      margin-bottom: 50px;
+    }
+
+    .settings-header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .settings-header p {
+      color: var(--text-gray);
+      font-size: 1rem;
+    }
+
+    .settings-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .profile-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .profile-avatar-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .profile-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary-red);
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .profile-avatar-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .profile-avatar-status {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .info-field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .info-value {
+      font-size: 1.1rem;
+      color: var(--text-dark);
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    .settings-action-section {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-edit {
+      padding: 12px 28px;
+      background: var(--primary-red);
+      color: white;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background var(--transition);
+      font-size: 1rem;
+    }
+
+    .btn-edit:hover {
+      background: var(--primary-red-hover);
+    }
+
+    .btn-logout {
+      padding: 12px 28px;
+      background: #f5f5f5;
+      color: var(--text-dark);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+      font-size: 1rem;
+    }
+
+    .btn-logout:hover {
+      background: #efefef;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      font-size: 1.1rem;
+      color: var(--text-gray);
+    }
+
+    .error-message {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      color: #856404;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .unauthorized-message {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-gray);
+    }
+
+    .unauthorized-message p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .unauthorized-message a {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--primary-red);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      transition: background var(--transition);
+    }
+
+    .unauthorized-message a:hover {
+      background: var(--primary-red-hover);
+    }
+
+    @media (max-width: 768px) {
+      .settings-container {
+        padding: 40px 20px;
+      }
+
+      .settings-header h1 {
+        font-size: 1.8rem;
+      }
+
+      .settings-card {
+        padding: 24px;
+      }
+
+      .profile-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+      }
+
+      .btn-edit,
+      .btn-logout {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5608327928856744" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar imported from main site -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-wrap" style="display:flex; align-items:center; gap:10px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 2C3.44772 2 3 2.44772 3 3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V7.82843C21 7.56321 20.8946 7.30886 20.7071 7.12132L15.8787 2.29289C15.6911 2.10536 15.4368 2 15.1716 2H4Z" fill="#E5322D"/>
+            <path d="M15 2V6C15 7.10457 15.8954 8 17 8H21L15 2Z" fill="#B3201B"/>
+            <rect x="7" y="13" width="10" height="2.5" rx="1" fill="white"/>
+            <rect x="7" y="17" width="10" height="2.5" rx="1" fill="white"/>
+          </svg>
+          <span style="font-size:1.8rem; font-weight:800; color:#2d2d2d; letter-spacing:-0.5px; font-family:'Inter', sans-serif;">Convertly</span>
+        </div>
+      </a>
+      <div class="nav-actions" id="navActions">
+        <a href="/signin.html" class="btn-login">Log in</a>
+        <a href="/signup.html" class="btn-signup">Sign up</a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="settings-container">
+    <div class="settings-header">
+      <h1>Account Settings</h1>
+      <p>Manage your profile information and account preferences</p>
+    </div>
+
+    <div id="settingsContent">
+      <div class="loading">Loading your account information...</div>
+    </div>
+  </main>
+
+  <script src="/js/auth.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const res = await fetch('/api/auth/me');
+        if (!res.ok) {
+          showUnauthorized();
+          return;
+        }
+
+        const data = await res.json();
+
+        if (!data.loggedIn || !data.user) {
+          showUnauthorized();
+          return;
+        }
+
+        showUserSettings(data.user);
+      } catch (err) {
+        console.error('Failed to load account settings:', err);
+        showError('Failed to load account settings. Please try again.');
+      }
+    });
+
+    function showUserSettings(user) {
+      const container = document.getElementById('settingsContent');
+
+      const joinDate = new Date(user.iat * 1000).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+
+      container.innerHTML = `
+        <div class="settings-card">
+          <div class="profile-section">
+            <div class="profile-avatar-box">
+              <img src="${user.avatarUrl || 'https://cdn-icons-png.flaticon.com/512/149/149071.png'}" alt="${user.name}" class="profile-avatar">
+              <div class="profile-avatar-name">${escapeHtml(user.name)}</div>
+              <div class="profile-avatar-status">Active Member</div>
+            </div>
+
+            <div class="profile-info">
+              <div class="info-field">
+                <div class="info-label">Full Name</div>
+                <div class="info-value">${escapeHtml(user.name)}</div>
+              </div>
+
+              <div class="info-field">
+                <div class="info-label">Email Address</div>
+                <div class="info-value">${escapeHtml(user.email)}</div>
+              </div>
+
+              <div class="info-field">
+                <div class="info-label">Account Status</div>
+                <div class="info-value" style="color: #10b981; font-weight: 600;">✓ Active</div>
+              </div>
+
+              <div class="info-field">
+                <div class="info-label">Member Since</div>
+                <div class="info-value">${joinDate}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-action-section">
+            <div class="action-buttons">
+              <button class="btn-edit" onclick="alert('Edit profile feature coming soon!')">Edit Profile</button>
+              <button class="btn-logout" onclick="logoutUser()">Log out</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function showUnauthorized() {
+      const container = document.getElementById('settingsContent');
+      container.innerHTML = `
+        <div class="settings-card unauthorized-message">
+          <p>You need to be logged in to view your account settings.</p>
+          <a href="/signin.html">Log in to your account</a>
+        </div>
+      `;
+    }
+
+    function showError(message) {
+      const container = document.getElementById('settingsContent');
+      container.innerHTML = `
+        <div class="settings-card">
+          <div class="error-message">${escapeHtml(message)}</div>
+          <p style="color: var(--text-gray); text-align: center;">
+            <a href="/" style="color: var(--primary-red); font-weight: 600;">Go back to home</a>
+          </p>
+        </div>
+      `;
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    async function logoutUser() {
+      try {
+        await fetch('/api/auth/logout', { method: 'POST' });
+        window.location.href = '/';
+      } catch (err) {
+        console.error('Logout failed:', err);
+        alert('Logout failed. Please try again.');
+      }
+    }
+  </script>
+</body>
+</html>

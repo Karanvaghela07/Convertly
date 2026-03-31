@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /signin.html
+Disallow: /signup.html
+Disallow: /account-settings.html
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Primary Sitemap
+Sitemap: https://convertlyyy.netlify.app/sitemap.xml
+
+# Additional directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

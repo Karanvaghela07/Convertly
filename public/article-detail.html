@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Detail | Convertly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5608327928856744" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-wrap" style="display:flex; align-items:center; gap:10px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 2C3.44772 2 3 2.44772 3 3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V7.82843C21 7.56321 20.8946 7.30886 20.7071 7.12132L15.8787 2.29289C15.6911 2.10536 15.4368 2 15.1716 2H4Z" fill="#E5322D"/>
+            <path d="M15 2V6C15 7.10457 15.8954 8 17 8H21L15 2Z" fill="#B3201B"/>
+            <rect x="7" y="13" width="10" height="2.5" rx="1" fill="white"/>
+            <rect x="7" y="17" width="10" height="2.5" rx="1" fill="white"/>
+          </svg>
+          <span style="font-size:1.8rem; font-weight:800; color:#2d2d2d; letter-spacing:-0.5px; font-family:'Inter', sans-serif;">Convertly</span>
+        </div>
+      </a>
+            <div class="nav-links">
+        <div class="dropdown">
+          <a href="#" class="nav-link">Convert PDF ▾</a>
+          <div class="dropdown-menu">
+            <a href="/pdf-to-word.html">PDF to Word</a>
+            <a href="/word-to-pdf.html">Word to PDF</a>
+            <a href="/pdf-to-jpg.html">PDF to JPG</a>
+            <a href="/jpg-to-pdf.html">JPG to PDF</a>
+            <a href="/pdf-to-excel.html">PDF to Excel</a>
+            <a href="/excel-to-pdf.html">Excel to PDF</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Excel Tools ▾</a>
+          <div class="dropdown-menu">
+            <a href="/excel-to-pdf.html">Excel to PDF</a>
+            <a href="/pdf-to-excel.html">PDF to Excel</a>
+            <a href="/csv-to-excel.html">CSV to Excel</a>
+            <a href="/excel-to-csv.html">Excel to CSV</a>
+            <a href="/json-to-csv.html">JSON to CSV <span style="font-size:0.6rem; background:#E5322D; color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">NEW</span></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Organize PDF ▾</a>
+          <div class="dropdown-menu">
+            <a href="/merge-pdf.html">Merge PDF</a>
+            <a href="/split-pdf.html">Split PDF</a>
+            <a href="/compress-pdf.html">Compress PDF</a>
+            <a href="/protect-pdf.html">Protect PDF <span style="font-size:0.6rem; background:#E5322D; color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">NEW</span></a>
+            <a href="/add-watermark.html">Add Watermark <span style="font-size:0.6rem; background:linear-gradient(90deg, #f59e0b, #ec4899); color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">PRO</span></a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Resources ▾</a>
+          <div class="dropdown-menu">
+            <a href="/guides.html">How-To Guides</a>
+            <a href="/articles.html">Articles & Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About Us</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="/signin.html" class="btn-login">Log in</a>
+        <a href="/signup.html" class="btn-signup">Sign up</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="article-detail-container">
+    <div id="articleContent">
+      <div class="loader-wrap" style="text-align: center; padding: 100px;">
+        <div class="convert-btn-loader" style="margin: 0 auto; border-top-color: var(--primary-red);"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Convertly. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/auth.js"></script>
+  <script>
+    async function loadArticle() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = parseInt(urlParams.get('id'));
+      
+      if (!id) {
+        window.location.href = '/articles.html';
+        return;
+      }
+
+      try {
+        const res = await fetch('/data/articles.json');
+        const articles = await res.json();
+        const art = articles.find(a => a.id === id);
+        
+        if (!art) {
+          document.getElementById('articleContent').innerHTML = '<h1>Article not found</h1><a href="/articles.html">Back to Articles</a>';
+          return;
+        }
+
+        document.title =art.title + ' | Convertly';
+
+        document.getElementById('articleContent').innerHTML = `
+          <div class="article-detail-header">
+            <div class="blog-category" style="margin-bottom: 20px;">${art.category}</div>
+            <h1>${art.title}</h1>
+            <div class="article-meta">
+              <span>Published on ${art.date}</span>
+              <span>•</span>
+              <span>By Convertly Team</span>
+            </div>
+          </div>
+          <img src="${art.image}" alt="${art.title}" class="article-main-img">
+          <div class="article-body-content">
+            ${art.content}
+          </div>
+          <div style="margin-top: 60px; text-align: center; border-top: 1px solid var(--border-light); padding-top: 40px;">
+             <a href="/articles.html" class="btn-secondary">← Back to All Articles</a>
+          </div>
+        `;
+      } catch (err) {
+        console.error('Failed to load article', err);
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadArticle);
+  </script>
+</body>
+</html>

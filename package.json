@@ -1,0 +1,44 @@
+{
+  "name": "convertly",
+  "version": "1.0.0",
+  "description": "Convertly – Free Online File Converter & PDF Toolkit",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "pdf",
+    "converter",
+    "docx",
+    "image",
+    "file-converter",
+    "excel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "bcryptjs": "^3.0.3",
+    "cheerio": "^1.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "docx": "^9.1.1",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "google-auth-library": "^10.6.2",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.3",
+    "mammoth": "^1.8.0",
+    "mongoose": "^9.3.2",
+    "muhammara": "^6.0.4",
+    "multer": "^1.4.5-lts.1",
+    "mupdf": "^1.27.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.4",
+    "pdf2table": "^0.0.2",
+    "sharp": "^0.33.5",
+    "xlsx": "^0.18.5"
+  }
+}

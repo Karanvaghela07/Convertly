@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>FAQ - Frequently Asked Questions | Convertlyyy Free PDF & File Conversion Tools</title>
+  <meta name="description" content="Find answers to common questions about Convertlyyy's free PDF tools, file conversions, security, supported formats, and troubleshooting. Get help with PDF to Word, merge PDF, compress files, and more.">
+  <meta name="keywords" content="Convertlyyy FAQ, PDF converter questions, file conversion help, PDF tools FAQ, how to convert PDF, PDF troubleshooting, document converter support">
+  <meta name="author" content="Convertlyyy">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://convertlyyy.netlify.app/faq.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://convertlyyy.netlify.app/faq.html">
+  <meta property="og:title" content="FAQ - Convertlyyy Help Center">
+  <meta property="og:description" content="Find answers to common questions about PDF conversion, file security, supported formats, and troubleshooting.">
+  <meta property="og:image" content="https://convertlyyy.netlify.app/og-image.png">
+  <meta property="og:site_name" content="Convertlyyy">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ - Convertlyyy Help Center">
+  <meta name="twitter:description" content="Get answers to your questions about PDF and file conversion tools.">
+  <meta name="twitter:image" content="https://convertlyyy.netlify.app/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5608327928856744" crossorigin="anonymous"></script>
+  
+  <!-- JSON-LD FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Convertlyyy free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Convertlyyy is 100% free. All our PDF and file conversion tools are available without any cost, registration, or subscriptions. We support our service through non-intrusive advertising."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my files secure on Convertlyyy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We use SSL encryption for all file transfers, and your files are automatically deleted from our servers within 2 hours of processing. We never access, share, or sell your files."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What file formats does Convertlyyy support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We support PDF, DOCX, DOC, XLSX, XLS, CSV, JPG, JPEG, PNG, WEBP, BMP, GIF, and more. Our tools can convert between these formats in various combinations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maximum file size I can upload?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The maximum file size for uploads is 50MB per file. For larger files, we recommend compressing them first or splitting them into smaller parts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to create an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No account is required to use our conversion tools. However, creating a free account gives you access to additional features like conversion history and faster processing."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertlyyy.netlify.app/"},
+      {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://convertlyyy.netlify.app/faq.html"}
+    ]
+  }
+  </script>
+  
+  <style>
+    .faq-section { margin-bottom: 48px; }
+    .faq-section h2 { color: var(--primary-red); font-size: 1.5rem; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--border-light); }
+    .faq-item { background: #fff; border: 1px solid var(--border-light); border-radius: 12px; margin-bottom: 16px; overflow: hidden; transition: all 0.2s; }
+    .faq-item:hover { border-color: var(--primary-red); box-shadow: 0 4px 12px rgba(229,50,45,0.1); }
+    .faq-question { padding: 20px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 700; color: var(--text-dark); }
+    .faq-question:hover { background: #fafafa; }
+    .faq-icon { width: 24px; height: 24px; transition: transform 0.3s; }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+    .faq-answer { padding: 0 24px 20px; color: var(--text-muted); line-height: 1.8; display: none; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-answer p { margin-bottom: 12px; }
+    .faq-answer ul { margin: 12px 0; padding-left: 24px; }
+    .faq-answer li { margin-bottom: 8px; }
+    .faq-search { max-width: 600px; margin: 0 auto 48px; }
+    .faq-search input { width: 100%; padding: 16px 24px; border: 2px solid var(--border-light); border-radius: 50px; font-size: 1.1rem; font-family: inherit; }
+    .faq-search input:focus { outline: none; border-color: var(--primary-red); }
+    .toc-box { background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%); padding: 28px; border-radius: 16px; margin-bottom: 48px; border: 1px solid var(--border-light); }
+    .toc-box h3 { margin-bottom: 16px; font-size: 1.1rem; }
+    .toc-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .toc-links a { color: var(--primary-red); font-weight: 600; text-decoration: none; padding: 8px 0; }
+    .toc-links a:hover { text-decoration: underline; }
+    .still-need-help { background: var(--primary-red); color: white; padding: 48px; border-radius: 16px; text-align: center; margin-top: 48px; }
+    .still-need-help h2 { color: white; margin-bottom: 16px; }
+    .still-need-help p { margin-bottom: 24px; opacity: 0.9; }
+    .still-need-help a { display: inline-block; background: white; color: var(--primary-red); padding: 14px 32px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: transform 0.2s; }
+    .still-need-help a:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body class="legal-page">
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <div class="logo-wrap" style="display:flex; align-items:center; gap:10px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 2C3.44772 2 3 2.44772 3 3V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V7.82843C21 7.56321 20.8946 7.30886 20.7071 7.12132L15.8787 2.29289C15.6911 2.10536 15.4368 2 15.1716 2H4Z" fill="#E5322D"/>
+            <path d="M15 2V6C15 7.10457 15.8954 8 17 8H21L15 2Z" fill="#B3201B"/>
+            <rect x="7" y="13" width="10" height="2.5" rx="1" fill="white"/>
+            <rect x="7" y="17" width="10" height="2.5" rx="1" fill="white"/>
+          </svg>
+          <span style="font-size:1.8rem; font-weight:800; color:#2d2d2d; letter-spacing:-0.5px; font-family:'Inter', sans-serif;">Convertlyyy</span>
+        </div>
+      </a>
+            <div class="nav-links">
+        <div class="dropdown">
+          <a href="#" class="nav-link">Convert PDF ▾</a>
+          <div class="dropdown-menu">
+            <a href="/pdf-to-word.html">PDF to Word</a>
+            <a href="/word-to-pdf.html">Word to PDF</a>
+            <a href="/pdf-to-jpg.html">PDF to JPG</a>
+            <a href="/jpg-to-pdf.html">JPG to PDF</a>
+            <a href="/pdf-to-excel.html">PDF to Excel</a>
+            <a href="/excel-to-pdf.html">Excel to PDF</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Excel Tools ▾</a>
+          <div class="dropdown-menu">
+            <a href="/excel-to-pdf.html">Excel to PDF</a>
+            <a href="/pdf-to-excel.html">PDF to Excel</a>
+            <a href="/csv-to-excel.html">CSV to Excel</a>
+            <a href="/excel-to-csv.html">Excel to CSV</a>
+            <a href="/json-to-csv.html">JSON to CSV <span style="font-size:0.6rem; background:#E5322D; color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">NEW</span></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Organize PDF ▾</a>
+          <div class="dropdown-menu">
+            <a href="/merge-pdf.html">Merge PDF</a>
+            <a href="/split-pdf.html">Split PDF</a>
+            <a href="/compress-pdf.html">Compress PDF</a>
+            <a href="/protect-pdf.html">Protect PDF <span style="font-size:0.6rem; background:#E5322D; color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">NEW</span></a>
+            <a href="/add-watermark.html">Add Watermark <span style="font-size:0.6rem; background:linear-gradient(90deg, #f59e0b, #ec4899); color:#fff; padding:2px 6px; border-radius:10px; margin-left:4px;">PRO</span></a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="nav-link">Resources ▾</a>
+          <div class="dropdown-menu">
+            <a href="/guides.html">How-To Guides</a>
+            <a href="/articles.html">Articles & Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About Us</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="/signin.html" class="btn-login">Log in</a>
+        <a href="/signup.html" class="btn-signup">Sign up</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="legal-hero">
+    <div class="section-container">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers to common questions about Convertlyyy's PDF tools, file conversion, security, and troubleshooting. Can't find what you're looking for? <a href="/contact.html" style="color:var(--primary-red);">Contact us</a>.</p>
+    </div>
+  </header>
+
+  <main class="legal-body" style="max-width: 900px;">
+    
+    <!-- Search Box -->
+    <div class="faq-search">
+      <input type="text" id="faqSearch" placeholder="Search for answers..." oninput="filterFAQs(this.value)">
+    </div>
+    
+    <!-- Table of Contents -->
+    <div class="toc-box">
+      <h3>Jump to a Topic</h3>
+      <div class="toc-links">
+        <a href="#general">General Questions</a>
+        <a href="#pdf-tools">PDF Tools</a>
+        <a href="#excel-tools">Excel & CSV Tools</a>
+        <a href="#image-tools">Image Conversion</a>
+        <a href="#security">Security & Privacy</a>
+        <a href="#technical">Technical Issues</a>
+        <a href="#account">Account & Features</a>
+        <a href="#mobile">Mobile & Browser</a>
+      </div>
+    </div>
+    
+    <!-- General Questions -->
+    <section class="faq-section" id="general">
+      <h2>General Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Is Convertlyyy completely free to use?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, Convertlyyy is 100% free for all users. We believe that essential document conversion tools should be accessible to everyone, regardless of their budget. All our PDF, Excel, and image conversion tools are available without any cost, hidden fees, or required subscriptions.</p>
+          <p>We sustain our service through non-intrusive advertising, which allows us to offer unlimited conversions at no charge. Unlike some competitors, we don't have premium tiers, watermarks on converted files, or artificial limitations on the number of files you can process.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need to install any software?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>No software installation is required. Convertlyyy is a completely web-based platform that works directly in your browser. All file processing happens on our secure cloud servers, which means:</p>
+          <ul>
+            <li>No downloads or installations needed</li>
+            <li>Works on any device with a modern web browser</li>
+            <li>Always up-to-date with the latest features</li>
+            <li>No storage space required on your computer</li>
+            <li>Compatible with Windows, Mac, Linux, iOS, and Android</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          What file formats does Convertlyyy support?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Convertlyyy supports a wide range of popular file formats to cover all your document conversion needs:</p>
+          <p><strong>Document Formats:</strong> PDF, DOCX (Word), DOC</p>
+          <p><strong>Spreadsheet Formats:</strong> XLSX (Excel), XLS, CSV</p>
+          <p><strong>Image Formats:</strong> JPG/JPEG, PNG, WEBP, BMP, GIF</p>
+          <p>We're constantly adding support for new formats based on user feedback. If you need a format that's not currently supported, please <a href="/contact.html">let us know</a>!</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          What is the maximum file size I can upload?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>The maximum file size for uploads is 50MB per file. This limit applies to all our conversion tools and is designed to ensure fast, reliable processing for all users.</p>
+          <p>If you have larger files, here are some options:</p>
+          <ul>
+            <li>Use our <a href="/compress-pdf.html">PDF Compress tool</a> to reduce file size first</li>
+            <li>Split large PDFs into smaller sections using our <a href="/split-pdf.html">Split PDF tool</a></li>
+            <li>For spreadsheets, consider saving as CSV format which is typically smaller</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How long does file conversion take?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Most conversions complete within seconds. The exact time depends on several factors:</p>
+          <ul>
+            <li><strong>File size:</strong> Larger files take longer to upload and process</li>
+            <li><strong>File complexity:</strong> Documents with many images or complex formatting may take longer</li>
+            <li><strong>Your internet speed:</strong> Faster connections mean faster uploads</li>
+            <li><strong>Server load:</strong> During peak times, there may be slight delays</li>
+          </ul>
+          <p>On average, a 5MB PDF converts to Word in about 3-5 seconds. You'll see a progress indicator during processing so you always know the status.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PDF Tools -->
+    <section class="faq-section" id="pdf-tools">
+      <h2>PDF Tools</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I convert PDF to Word?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Converting PDF to Word with Convertlyyy is simple and takes just a few steps:</p>
+          <ol>
+            <li>Go to our <a href="/pdf-to-word.html">PDF to Word converter</a></li>
+            <li>Click "Choose File" or drag and drop your PDF onto the upload area</li>
+            <li>Wait for the file to upload (you'll see a progress bar)</li>
+            <li>Click the "Convert" button</li>
+            <li>Download your converted Word document</li>
+          </ol>
+          <p>Our converter preserves formatting, images, tables, and text layout as accurately as possible. The resulting DOCX file is fully editable in Microsoft Word, Google Docs, or any compatible word processor.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I merge multiple PDF files into one?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Our <a href="/merge-pdf.html">Merge PDF tool</a> allows you to combine multiple PDF files into a single document. Here's how:</p>
+          <ol>
+            <li>Go to the Merge PDF page</li>
+            <li>Upload all the PDF files you want to combine</li>
+            <li>Arrange them in your desired order by dragging and dropping</li>
+            <li>Click "Merge" to combine the files</li>
+            <li>Download your merged PDF</li>
+          </ol>
+          <p>You can merge as many PDFs as you need. The total combined size should be under 50MB for optimal performance.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How much can I reduce PDF file size?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Our <a href="/compress-pdf.html">PDF compression tool</a> can typically reduce file sizes by 40-80%, depending on the content of your PDF. Files with many high-resolution images see the most dramatic reduction.</p>
+          <p>The compression process optimizes images, removes redundant data, and streamlines the file structure while maintaining readable quality. This is perfect for:</p>
+          <ul>
+            <li>Sending PDFs via email (avoiding attachment size limits)</li>
+            <li>Uploading to websites with file size restrictions</li>
+            <li>Saving storage space on your device</li>
+            <li>Faster loading times when sharing online</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I extract specific pages from a PDF?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Our <a href="/split-pdf.html">Split PDF tool</a> lets you extract specific pages from any PDF document. You can specify page ranges like "1-5" to extract the first five pages, or "2,4,6" to extract individual pages, or combine both methods like "1-3,7,10-15".</p>
+          <p>This is useful for extracting chapters from ebooks, creating handouts from larger documents, or separating sections for different recipients.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Does the converted Word document preserve formatting?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>We strive to preserve formatting as accurately as possible during PDF to Word conversion. Our converter maintains:</p>
+          <ul>
+            <li>Text content and fonts (close approximations if exact fonts aren't available)</li>
+            <li>Images and their positions</li>
+            <li>Tables and their structure</li>
+            <li>Basic text formatting (bold, italic, underline)</li>
+            <li>Page layout and margins</li>
+          </ul>
+          <p>However, please note that PDFs and Word documents use fundamentally different layout systems. Some complex layouts, custom fonts, or specialized formatting may require minor adjustments after conversion. Scanned PDFs (images of text) cannot be converted to editable text without OCR technology.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Excel & CSV Tools -->
+    <section class="faq-section" id="excel-tools">
+      <h2>Excel & CSV Tools</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I convert Excel to PDF?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Converting Excel spreadsheets to PDF is quick and easy with our <a href="/excel-to-pdf.html">Excel to PDF converter</a>:</p>
+          <ol>
+            <li>Upload your Excel file (.xlsx or .xls)</li>
+            <li>Click the Convert button</li>
+            <li>Download your PDF</li>
+          </ol>
+          <p>The PDF will maintain your spreadsheet's formatting, including cell borders, colors, and font styles. This is perfect for sharing reports, invoices, or data tables in a format that looks the same on any device.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I convert CSV files to Excel?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Our <a href="/csv-to-excel.html">CSV to Excel converter</a> transforms comma-separated value files into properly formatted Excel spreadsheets. This is especially useful when:</p>
+          <ul>
+            <li>Importing data from databases or other software</li>
+            <li>Working with exported data that needs formatting</li>
+            <li>Converting plain text data into a structured spreadsheet</li>
+            <li>Preparing data for analysis with Excel's advanced features</li>
+          </ul>
+          <p>The converter automatically detects delimiters and organizes your data into appropriate columns.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I extract data from PDF to Excel?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Use our <a href="/pdf-to-excel.html">PDF to Excel converter</a> to extract tabular data from PDF files into editable Excel spreadsheets. The tool analyzes the PDF structure and attempts to recreate tables with proper rows and columns.</p>
+          <p>This works best for PDFs that contain clear table structures. Complex layouts or scanned documents may require manual adjustments after conversion.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Image Conversion -->
+    <section class="faq-section" id="image-tools">
+      <h2>Image Conversion</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I convert JPG images to PDF?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Our <a href="/jpg-to-pdf.html">JPG to PDF converter</a> lets you combine one or more images into a single PDF document:</p>
+          <ol>
+            <li>Upload your image files (JPG, PNG, WEBP, etc.)</li>
+            <li>Arrange them in your preferred order</li>
+            <li>Click Convert to create your PDF</li>
+            <li>Download the resulting PDF</li>
+          </ol>
+          <p>Each image becomes a page in the PDF, making it perfect for creating photo albums, portfolios, or document scans.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I extract images from a PDF?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Our <a href="/pdf-to-jpg.html">PDF to JPG converter</a> converts each page of your PDF into a separate JPG image. This is useful for:</p>
+          <ul>
+            <li>Creating thumbnails of document pages</li>
+            <li>Sharing PDF content on social media</li>
+            <li>Including PDF pages in presentations</li>
+            <li>Archiving documents as images</li>
+          </ul>
+          <p>The images are provided in a ZIP file for convenient download.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          What image formats are supported?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Our image tools support all major image formats including:</p>
+          <ul>
+            <li><strong>JPG/JPEG:</strong> The most common photo format</li>
+            <li><strong>PNG:</strong> Great for images with transparency</li>
+            <li><strong>WEBP:</strong> Modern format with excellent compression</li>
+            <li><strong>BMP:</strong> Windows bitmap format</li>
+            <li><strong>GIF:</strong> Good for simple graphics (static images)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Security & Privacy -->
+    <section class="faq-section" id="security">
+      <h2>Security & Privacy</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Is my data safe when using Convertlyyy?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>We take your privacy and security very seriously. Here's how we protect your data:</p>
+          <ul>
+            <li><strong>SSL Encryption:</strong> All file transfers are encrypted using industry-standard SSL/TLS protocols</li>
+            <li><strong>Automatic Deletion:</strong> Your files are automatically and permanently deleted from our servers within 2 hours of processing</li>
+            <li><strong>No Human Access:</strong> Our conversion process is fully automated - no human ever views your files</li>
+            <li><strong>No Sharing:</strong> We never share, sell, or use your files for any purpose other than the requested conversion</li>
+            <li><strong>Secure Infrastructure:</strong> Our servers are hosted on secure, enterprise-grade cloud infrastructure</li>
+          </ul>
+          <p>For more details, please read our <a href="/privacy.html">Privacy Policy</a>.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How long are my files stored on your servers?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Your uploaded files and converted files are stored temporarily for a maximum of 2 hours. After this period, all files are automatically and permanently deleted from our servers with no recovery possible.</p>
+          <p>This short retention period ensures your documents remain private while still giving you enough time to download your converted files.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I convert confidential or sensitive documents?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, with appropriate caution. While we implement strong security measures, we recommend the following for highly sensitive documents:</p>
+          <ul>
+            <li>Ensure you're using a secure, private internet connection</li>
+            <li>Remove any unnecessary sensitive information before uploading</li>
+            <li>Download your converted files promptly</li>
+            <li>For extremely confidential materials, consider using offline conversion tools</li>
+          </ul>
+          <p>We do not access or review the contents of your files - our process is fully automated.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you share my data with third parties?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>No, we do not share, sell, or transfer your files to any third parties. Your files are used solely for the purpose of performing the conversion you requested. We use third-party services only for:</p>
+          <ul>
+            <li>Website analytics (aggregated, non-personal data)</li>
+            <li>Advertising (does not involve your uploaded files)</li>
+            <li>Error monitoring (to improve our service)</li>
+          </ul>
+          <p>None of these services have access to your uploaded files.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Technical Issues -->
+    <section class="faq-section" id="technical">
+      <h2>Technical Issues & Troubleshooting</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          My conversion failed. What should I do?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>If a conversion fails, try these troubleshooting steps:</p>
+          <ol>
+            <li><strong>Check file size:</strong> Ensure your file is under 50MB</li>
+            <li><strong>Verify file format:</strong> Make sure the file is in a supported format and not corrupted</li>
+            <li><strong>Remove password protection:</strong> Password-protected files cannot be converted</li>
+            <li><strong>Try a different browser:</strong> Clear your cache or switch to Chrome, Firefox, or Edge</li>
+            <li><strong>Check your internet connection:</strong> A stable connection is needed for uploads</li>
+            <li><strong>Refresh and retry:</strong> Sometimes a simple page refresh resolves temporary issues</li>
+          </ol>
+          <p>If the problem persists, please <a href="/contact.html">contact our support team</a> with details about the error.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Why can't I convert my password-protected PDF?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Password-protected PDFs are encrypted to prevent unauthorized access, and our conversion tools cannot bypass this security feature. To convert a protected PDF:</p>
+          <ol>
+            <li>Open the PDF in Adobe Acrobat or a similar PDF reader</li>
+            <li>Enter the password to unlock it</li>
+            <li>Save a new copy without password protection</li>
+            <li>Upload the unprotected version to Convertlyyy</li>
+          </ol>
+          <p>This ensures you have proper authorization to access the document's contents.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          The converted file doesn't look right. What can I do?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>While we strive for accurate conversions, complex documents may sometimes need adjustment. Here's what to try:</p>
+          <ul>
+            <li><strong>Re-convert the file:</strong> Sometimes a second attempt produces better results</li>
+            <li><strong>Simplify the source:</strong> Remove complex formatting from the original if possible</li>
+            <li><strong>Check fonts:</strong> The converted document may use similar fonts if exact matches aren't available</li>
+            <li><strong>Manual adjustment:</strong> Minor formatting tweaks may be needed after conversion</li>
+          </ul>
+          <p>Documents with complex layouts, unusual fonts, or scanned images may have formatting differences. If you consistently experience issues with a specific file type, please let us know.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I clear my browser cache?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Clearing your browser cache can resolve many display and functionality issues:</p>
+          <p><strong>Chrome:</strong> Press Ctrl+Shift+Delete, select "Cached images and files", and click Clear data</p>
+          <p><strong>Firefox:</strong> Press Ctrl+Shift+Delete, select "Cache", and click Clear Now</p>
+          <p><strong>Edge:</strong> Press Ctrl+Shift+Delete, check "Cached images and files", and click Clear now</p>
+          <p><strong>Safari:</strong> Go to Safari menu → Preferences → Privacy → Manage Website Data → Remove All</p>
+          <p>After clearing the cache, refresh the Convertlyyy page and try your conversion again.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Account & Features -->
+    <section class="faq-section" id="account">
+      <h2>Account & Features</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need to create an account?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>No account is required to use any of our conversion tools. You can start converting files immediately without signing up or providing any personal information.</p>
+          <p>However, creating a free account offers some additional benefits:</p>
+          <ul>
+            <li>Conversion history tracking</li>
+            <li>Faster processing priority</li>
+            <li>Saved preferences</li>
+            <li>Email notifications when large conversions complete</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I create an account?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Creating a free account is quick and easy:</p>
+          <ol>
+            <li>Click the "Sign up" button in the top right corner</li>
+            <li>Enter your email address and create a password</li>
+            <li>Alternatively, sign up with your Google account for one-click registration</li>
+            <li>That's it! You can start using your account immediately</li>
+          </ol>
+          <p>We only require minimal information and never spam your email.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Is there a limit on how many files I can convert?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>There is no limit on the number of files you can convert. Whether you need to convert 1 file or 1,000, Convertlyyy is free to use without restrictions. Convert as many files as you need, whenever you need to.</p>
+          <p>The only limitations are the 50MB per-file size limit and the supported file formats.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Mobile & Browser -->
+    <section class="faq-section" id="mobile">
+      <h2>Mobile & Browser Compatibility</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I use Convertlyyy on my phone or tablet?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Convertlyyy is fully responsive and works on all devices including smartphones and tablets. Whether you're using an iPhone, Android phone, iPad, or any other mobile device, you can access all our conversion tools through your mobile browser.</p>
+          <p>Simply open your mobile browser (Safari, Chrome, etc.), navigate to convertlyyy.netlify.app, and start converting files. The interface automatically adapts to your screen size for the best user experience.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Which browsers are supported?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Convertlyyy works with all modern web browsers. We recommend using the latest version of:</p>
+          <ul>
+            <li>Google Chrome</li>
+            <li>Mozilla Firefox</li>
+            <li>Microsoft Edge</li>
+            <li>Apple Safari</li>
+            <li>Opera</li>
+          </ul>
+          <p>Older browsers (like Internet Explorer) may not be fully supported. If you experience issues, try updating your browser to the latest version.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need to enable JavaScript?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, JavaScript must be enabled for Convertlyyy to function properly. Our interactive features, file uploads, and conversion processes all rely on JavaScript. Most browsers have JavaScript enabled by default.</p>
+          <p>If you're having issues, check your browser settings to ensure JavaScript is not blocked.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Still need help -->
+    <div class="still-need-help">
+      <h2>Still Have Questions?</h2>
+      <p>Our support team is here to help. Get in touch and we'll respond within 24 hours.</p>
+      <a href="/contact.html">Contact Support</a>
+    </div>
+    
+  </main>
+
+  <footer class="footer" style="background:#fff; border-top:1px solid var(--border-light); padding:60px 0; margin-top:60px;">
+    <div class="section-container">
+      <div class="footer-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:40px; margin-bottom:40px;">
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">PDF Tools</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/pdf-to-word.html" style="color:var(--text-muted);">PDF to Word</a>
+            <a href="/word-to-pdf.html" style="color:var(--text-muted);">Word to PDF</a>
+            <a href="/merge-pdf.html" style="color:var(--text-muted);">Merge PDF</a>
+            <a href="/compress-pdf.html" style="color:var(--text-muted);">Compress PDF</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">Excel Tools</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/excel-to-pdf.html" style="color:var(--text-muted);">Excel to PDF</a>
+            <a href="/pdf-to-excel.html" style="color:var(--text-muted);">PDF to Excel</a>
+            <a href="/csv-to-excel.html" style="color:var(--text-muted);">CSV to Excel</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">Resources</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/articles.html" style="color:var(--text-muted);">Articles & Guides</a>
+            <a href="/faq.html" style="color:var(--text-muted);">FAQ</a>
+            <a href="/about.html" style="color:var(--text-muted);">About Us</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700; margin-bottom:16px;">Legal</h4>
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a href="/privacy.html" style="color:var(--text-muted);">Privacy Policy</a>
+            <a href="/terms.html" style="color:var(--text-muted);">Terms of Service</a>
+            <a href="/contact.html" style="color:var(--text-muted);">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="text-align:center; padding-top:24px; border-top:1px solid var(--border-light);">
+        <p>&copy; 2026 Convertlyyy. Free PDF & file conversion tools for everyone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/auth.js"></script>
+  <script>
+    // FAQ accordion functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const wasActive = item.classList.contains('active');
+        
+        // Close all items
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        
+        // Open clicked item (unless it was already open)
+        if (!wasActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+    
+    // FAQ search functionality
+    function filterFAQs(query) {
+      const lowerQuery = query.toLowerCase();
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const question = item.querySelector('.faq-question').textContent.toLowerCase();
+        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+        if (question.includes(lowerQuery) || answer.includes(lowerQuery)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = query ? 'none' : 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
