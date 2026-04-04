@@ -3,11 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Favicon - Multiple formats for best compatibility -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+  
   <!-- Primary SEO Meta Tags -->
-  <title>Free Online PDF & Excel Converter | Convertlyyy - PDF to Word, Excel Tools, Merge PDFs</title>
+  <title>Convertlyyy | Free Online PDF & Excel Converter - PDF to Word, Merge PDFs</title>
   <meta name="description" content="Convertlyyy is the #1 free online PDF & Excel toolkit. Convert PDF to Word, Excel to PDF, CSV to Excel, merge PDFs, split pages, compress files. 100% free, secure, no signup required.">
   <meta name="keywords" content="PDF converter, PDF to Word, Word to PDF, Excel to PDF, PDF to Excel, CSV to Excel, Excel to CSV, merge PDF, split PDF, compress PDF, JPG to PDF, PDF to JPG, free PDF tools, free Excel tools, online file converter">
   <meta name="author" content="Convertlyyy">
@@ -19,9 +25,9 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://convertlyyy.netlify.app/">
-  <meta property="og:title" content="Free Online PDF Converter & File Tools | Convertlyyy">
+  <meta property="og:title" content="Convertlyyy | Free Online PDF Converter & File Tools">
   <meta property="og:description" content="Convert PDF to Word, merge PDFs, split pages, compress files & more. 100% free, secure, no signup. The best online PDF toolkit for everyone.">
-  <meta property="og:image" content="https://convertlyyy.netlify.app/og-image.png">
+  <meta property="og:image" content="https://convertlyyy.netlify.app/favicon.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Convertlyyy">
@@ -30,9 +36,9 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://convertlyyy.netlify.app/">
-  <meta name="twitter:title" content="Free Online PDF Converter & File Tools | Convertlyyy">
+  <meta name="twitter:title" content="Convertlyyy | Free Online PDF Converter & File Tools">
   <meta name="twitter:description" content="Convert PDF to Word, merge PDFs, split pages, compress files & more. 100% free, secure, no signup required.">
-  <meta name="twitter:image" content="https://convertlyyy.netlify.app/og-image.png">
+  <meta name="twitter:image" content="https://convertlyyy.netlify.app/favicon.png">
   
   <!-- Additional SEO Meta Tags -->
   <meta name="theme-color" content="#E5322D">
@@ -85,13 +91,29 @@
     ]
   }
   </script>
+  <!-- WebSite Schema - CRITICAL for Google to show correct site name -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Convertlyyy",
+    "alternateName": "Convertlyyy PDF Tools",
+    "url": "https://convertlyyy.netlify.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://convertlyyy.netlify.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Convertlyyy",
     "url": "https://convertlyyy.netlify.app/",
-    "logo": "https://convertlyyy.netlify.app/logo.png",
+    "logo": "https://convertlyyy.netlify.app/favicon.png",
+    "image": "https://convertlyyy.netlify.app/favicon.png",
     "description": "Free online PDF conversion tools and file utilities",
     "sameAs": []
   }
